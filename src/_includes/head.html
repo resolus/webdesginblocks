@@ -1,0 +1,26 @@
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="/assets/css/tailwind_custom.css" rel="stylesheet">
+<link href="/assets/css/styles.css" rel="stylesheet">
+
+<link rel="icon" href="/assets/images/favicon.png">
+
+<!-- === OGP === -->
+<meta property="og:title" content="{{ page.title | escape }} | {{ site.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:image" content="{{ page.image | absolute_url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:description" content="{{ page.title }}" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:image:src" content="{{ page.image | absolute_url }}">
+
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>

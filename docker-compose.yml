@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    environment:
+      EDITOR: vim
+    image: resolus-webdesignblocks
+    container_name: resolus-webdesignblocks
+    command: /bin/sh -c "bundle install && bundle exec foreman start"
+    volumes:
+      - .:/app:cached
+      - bundle:/usr/local/bundle
+    ports:
+      - 8288:4000
+      - 8229:35729
+
+volumes:
+  bundle:
+    driver: local

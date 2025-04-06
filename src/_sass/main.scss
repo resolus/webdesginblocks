@@ -1,0 +1,20 @@
+
+ul {
+    margin-top: 8px;
+}
+
+li ul {
+    margin-top: 4px;
+}
+
+#kv {
+    background: linear-gradient(to top, rgba(220, 220, 220, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%),url(/assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .msg {
+        // background-color: rgba(255, 255, 255, 0.5);
+        text-shadow: 0px 0px 5px #fff;
+    }
+}
+

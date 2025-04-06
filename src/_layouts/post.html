@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<div class="container mx-auto">
+  <div class="grid grid-cols-6 px-4">
+    <article class="col-start-1 col-span-6 sm:col-start-2 sm:col-span-4 markdown" itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <h1 class="" itemprop="name headline">{{ page.title | escape }}</h1>
+        <time class="text-right block text-gray-500" itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      </header>
+
+      <div itemprop="articleBody">
+        <figure class="mt-4">
+          <img class="w-full rounded-lg" src="{{ page.image }}" alt="{{ page.title | escape }}">
+        </figure>
+
+        <div class="mt-4 prose-lg">{{ content }}</div>
+      </div>
+
+      <a class="" href="{{ page.url | absolute_url }}" hidden></a>
+    </article>
+  </div>
+</div>
+
